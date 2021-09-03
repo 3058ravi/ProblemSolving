@@ -24,4 +24,23 @@ public class CommonUtils {
             printInOrderTree(head.right);
         }
     }
+
+    public static void printPreOrderTree(TNode node){
+        TNode head= node;
+        if(head!=null) {
+            System.out.print(head.getData() + " ");
+            printPreOrderTree(head.left);
+            printPreOrderTree(head.right);
+        }
+    }
+
+    public static void printPostOrderTree(TNode node){
+        TNode head= node;
+        if(head!=null) {
+
+            printPostOrderTree(head.left);
+            printPostOrderTree(head.right);
+            System.out.print(head.getData() + " ");
+        }
+    }
 }
