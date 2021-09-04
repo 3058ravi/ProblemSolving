@@ -8,6 +8,14 @@ public class CommonUtils {
         System.out.println();
     }
 
+    public static void printArray(int[][] arr) {
+        for (int[] a : arr) {
+            for (int b : a) {
+                System.out.print(b + " ");
+            }
+            System.out.println();
+        }
+    }
     public static void printLinkedList(Node node) {
         Node curr=node;
         while (curr != null) {
