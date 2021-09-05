@@ -16,8 +16,8 @@ public class CommonUtils {
             System.out.println();
         }
     }
-    public static void printLinkedList(Node node) {
-        Node curr=node;
+    public static void printLinkedList(LNode LNode) {
+        LNode curr= LNode;
         while (curr != null) {
             System.out.print(curr.getData() + " ");
             curr = curr.next;

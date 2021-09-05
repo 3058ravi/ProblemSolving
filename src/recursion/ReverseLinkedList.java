@@ -1,32 +1,32 @@
 package recursion;
 
 import utils.CommonUtils;
-import utils.Node;
+import utils.LNode;
 public class ReverseLinkedList {
 
     public static void main(String[] args) {
-        Node n1 = new Node(1);
-        Node n2 = new Node(2);
-        Node n3 = new Node(3);
-        Node n4 = new Node(4);
-        Node n5 = new Node(5);
+        LNode n1 = new LNode(1);
+        LNode n2 = new LNode(2);
+        LNode n3 = new LNode(3);
+        LNode n4 = new LNode(4);
+        LNode n5 = new LNode(5);
 
         n1.setNext(n2);
         n2.setNext(n3);
         n3.setNext(n4);
         n4.setNext(n5);
         CommonUtils.printLinkedList(n1);
-        Node reverse=reverseLinkedList(n1);
+        LNode reverse=reverseLinkedList(n1);
         System.out.println("\nReversed list is");
         CommonUtils.printLinkedList(reverse);
     }
 
-    public static Node reverseLinkedList(Node node){
-        if(node==null||node.next==null)
-            return node;
-       Node p=reverseLinkedList(node.next);
-       node.next.next=node;
-       node.next=null;
+    public static LNode reverseLinkedList(LNode LNode){
+        if(LNode ==null|| LNode.next==null)
+            return LNode;
+       LNode p=reverseLinkedList(LNode.next);
+       LNode.next.next= LNode;
+       LNode.next=null;
        return p;
 
     }

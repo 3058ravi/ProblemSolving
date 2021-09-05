@@ -1,6 +1,5 @@
 package tree.BT;
 
-import utils.Node;
 import utils.TNode;
 
 public class IsCousinNode {

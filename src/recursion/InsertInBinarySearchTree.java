@@ -1,7 +1,6 @@
 package recursion;
 
 import utils.CommonUtils;
-import utils.Node;
 import utils.TNode;
 
 public class InsertInBinarySearchTree {
