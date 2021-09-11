@@ -16,12 +16,13 @@ public class CommonUtils {
             System.out.println();
         }
     }
-    public static void printLinkedList(LNode LNode) {
-        LNode curr= LNode;
+    public static void printLinkedList(ListNode ListNode) {
+        ListNode curr= ListNode;
         while (curr != null) {
             System.out.print(curr.getData() + " ");
             curr = curr.next;
         }
+        System.out.println("");
     }
 
     public static void printInOrderTree(TNode node){

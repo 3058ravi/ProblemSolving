@@ -1,18 +1,18 @@
 package utils;
 
-public class LNode {
+public class ListNode {
     int data;
-    public LNode next;
+    public ListNode next;
 
-    public LNode(int data) {
+    public ListNode(int data) {
         this.data = data;
     }
 
-    public void setNext(LNode LNode) {
-        this.next = LNode;
+    public void setNext(ListNode ListNode) {
+        this.next = ListNode;
     }
 
-    public LNode getNext() {
+    public ListNode getNext() {
         return next;
     }
 

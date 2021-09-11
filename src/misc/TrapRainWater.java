@@ -19,7 +19,7 @@ public class TrapRainWater {
                     trappedWater += maxLeft - height[left];
                 left++;
             } else {
-                if (height[right] >= maxLeft)
+                if (height[right] >= maxRight)
                     maxRight = height[right];
                 else
                     trappedWater += maxRight - height[right];
@@ -30,7 +30,7 @@ public class TrapRainWater {
     }
 
     public static void main(String[] args) {
-        int[] height = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-        trap(height);
+        int[] height = {5,4,1,2};
+        System.out.println(trap(height));
     }
 }
