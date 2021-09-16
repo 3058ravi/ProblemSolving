@@ -1,5 +1,7 @@
 package utils;
 
+/* Node implementation for Binary Tree */
+
 public class TNode {
     int data;
     public TNode left;

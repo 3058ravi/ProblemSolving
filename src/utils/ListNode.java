@@ -1,5 +1,7 @@
 package utils;
 
+/* Node implementation for single Linked List */
+
 public class ListNode {
     int data;
     public ListNode next;

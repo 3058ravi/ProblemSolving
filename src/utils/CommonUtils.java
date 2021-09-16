@@ -25,6 +25,15 @@ public class CommonUtils {
         System.out.println("");
     }
 
+    public static void printDoublyLinkedList(DLNode ListNode) {
+        DLNode curr= ListNode;
+        while (curr != null) {
+            System.out.print(curr.getData() + " ");
+            curr = curr.next;
+        }
+        System.out.println("");
+    }
+
     public static void printInOrderTree(TNode node){
         TNode head= node;
         if(head!=null) {
