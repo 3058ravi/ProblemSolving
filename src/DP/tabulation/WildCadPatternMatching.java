@@ -32,9 +32,32 @@ public class WildCadPatternMatching {
         return dp[m][n];
     }
 
+    public static boolean isMatch(String s, String p, int i, int j){
+        if(i==s.length() &&j==p.length())
+            return true;
+         if(i<s.length() &&j==p.length())
+            return false;
+
+         if(i==s.length() && j<p.length()){
+             for(int k=j; k<p.length(); k++){
+                 if(p.charAt(k)!='*')
+                     return false;
+             }
+             return  true;
+         }
+
+
+        if(s.charAt(i)==p.charAt(j)|| p.charAt(j)=='?')
+            return isMatch(s, p, i+1, j+1);
+        if(p.charAt(j)=='*')
+            return (isMatch(s, p, i, j+1) ||isMatch(s, p, i+1, j)  );
+
+        return false;
+    }
+
     public static void main(String[] args) {
-        String s = "zacabz";
-        String p = "*a?b";
-        System.out.println(isMatch(s, p));
+        String s = "aa";
+        String p = "*";
+        System.out.println(isMatch(s, p, 0,0));
     }
 }

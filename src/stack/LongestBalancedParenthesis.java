@@ -5,7 +5,7 @@ import java.util.Stack;
 public class LongestBalancedParenthesis {
     public static void main(String[] args)
     {
-        System.out.println(findMaxLen("((()()"));       // prints 4
+        System.out.println(findMaxLen(")((()()"));       // prints 4
         System.out.println(findMaxLen("(((()"));        // prints 2
         System.out.println(findMaxLen("(((("));         // prints 0
         System.out.println(findMaxLen("()()"));         // prints 4
