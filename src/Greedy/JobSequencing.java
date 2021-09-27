@@ -2,6 +2,7 @@ package Greedy;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 
 public class JobSequencing {
@@ -26,9 +27,9 @@ public class JobSequencing {
         printJobScheduling(arr, 3);
     }
 
-    public static void printJobScheduling(ArrayList<Job> arr, int t) {
-        int n = arr.size();
-        Collections.sort(arr,
+    public static void printJobScheduling(List<Job> list, int t) {
+        int n = list.size();
+        Collections.sort(list,
                 (a, b) -> b.profit - a.profit);
 
         boolean result[] = new boolean[t];
@@ -38,13 +39,13 @@ public class JobSequencing {
             // Find a free slot for this job
             // (Note that we start from the
             // last possible slot)
-            for (int j = Math.min(t - 1, arr.get(i).deadline - 1);
+            for (int j = Math.min(t - 1, list.get(i).deadline - 1);
                  j >= 0; j--) {
 
                 // Free slot found
                 if (result[j] == false) {
                     result[j] = true;
-                    job[j] = arr.get(i).id;
+                    job[j] = list.get(i).id;
                     break;
                 }
             }

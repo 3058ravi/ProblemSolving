@@ -1,4 +1,4 @@
-package stack;
+package DP.tabulation;
 
 public class MaxSquare {
     public  static void main(String[] args){

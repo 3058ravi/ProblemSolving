@@ -18,6 +18,7 @@ public class MinStack {
             s.push(2*x-minE);
             minE=x;
         }
+
     }
 
     public void pop() {
@@ -33,6 +34,7 @@ public class MinStack {
     }
 
     public int min(){
+
         return minE;
     }
 
