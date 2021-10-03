@@ -12,6 +12,7 @@ public class ReverseKLL {
         l1.next.next.next = new ListNode(4);
         l1.next.next.next.next = new ListNode(5);
         l1.next.next.next.next.next = new ListNode(6);
+        l1.next.next.next.next.next.next = new ListNode(7);
         ListNode n = reverseKList(l1,3);
         CommonUtils.printLinkedList(n);
     }

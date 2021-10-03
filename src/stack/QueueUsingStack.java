@@ -20,7 +20,7 @@ public class QueueUsingStack {
     public int deQueue() {
         int x = Integer.MIN_VALUE;
         if (s1.isEmpty())
-            System.out.println("Queue is empty");
+            System.out.println("Queue.Queue is empty");
         else
             x = s1.pop();
         return x;
