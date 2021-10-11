@@ -44,7 +44,7 @@ public class HuffmanCoding {
         PriorityQueue<Node> pq;
         pq = new PriorityQueue<>(Comparator.comparingInt(l -> l.freq));
 
-        for (var entry: freq.entrySet()) {
+        for (Map.Entry<Character,Integer> entry: freq.entrySet()) {
             pq.add(new Node(entry.getKey(), entry.getValue()));
         }
 

@@ -5,11 +5,8 @@ import utils.TNode;
 import java.util.Deque;
 import java.util.LinkedList;
 
-class printLeafTNodes {
-    public static void main(String[] args)
-    {
-       
-
+class printLeafNodes {
+    public static void main(String[] args) {
         TNode root = new TNode(1);
         root.left = new TNode(2);
         root.right = new TNode(3);
