@@ -1,5 +1,8 @@
 package utils;
 
+import java.util.List;
+import java.util.ListIterator;
+
 public class CommonUtils {
     public static void printArray(int[] arr) {
         for (int a : arr) {
@@ -16,6 +19,14 @@ public class CommonUtils {
             System.out.println();
         }
     }
+
+    public static void printIntegerList(List<Integer> list) {
+        ListIterator<Integer> listIterator= list.listIterator();
+       while(listIterator.hasNext())
+           System.out.print(listIterator.next()+" ");
+        System.out.println();
+    }
+
     public static void printLinkedList(ListNode ListNode) {
         ListNode curr= ListNode;
         while (curr != null) {

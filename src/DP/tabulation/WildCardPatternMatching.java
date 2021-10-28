@@ -1,6 +1,6 @@
 package DP.tabulation;
 
-public class WildCadPatternMatching {
+public class WildCardPatternMatching {
     public static boolean isMatch(String s, String p) {
         int m = s.length();
         int n = p.length();
