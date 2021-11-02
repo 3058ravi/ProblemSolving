@@ -27,6 +27,13 @@ public class CommonUtils {
         System.out.println();
     }
 
+    public static void printStringList(List<String> list) {
+        ListIterator<String> listIterator= list.listIterator();
+        while(listIterator.hasNext())
+            System.out.print(listIterator.next()+" ");
+        System.out.println();
+    }
+
     public static void printLinkedList(ListNode ListNode) {
         ListNode curr= ListNode;
         while (curr != null) {
