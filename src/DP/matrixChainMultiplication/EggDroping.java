@@ -11,8 +11,8 @@ import java.util.Arrays;
  */
 public class EggDroping {
     public static void main(String[] args){
-        int f=45;
-        int e=3;
+        int f=100;
+        int e=2;
         int[][] dp= new int[e+1][f+1];
         for(int i=0; i<=e; i++)
             Arrays.fill(dp[i],-1);

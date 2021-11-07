@@ -2,7 +2,10 @@ package DP.tabulation;
 
 public class MaxSquare {
     public  static void main(String[] args){
-       int[][] matrix = {{1,0,1,0,0},{1,0,1,1,1},{1,1,1,1,1},{1,0,0,1,0}};
+       int[][] matrix = {{1,0,1,0,0},
+                         {1,0,1,1,1},
+                         {1,1,1,1,1},
+                         {1,0,0,1,0}};
        System.out.println(maxSquare(matrix));
     }
 
