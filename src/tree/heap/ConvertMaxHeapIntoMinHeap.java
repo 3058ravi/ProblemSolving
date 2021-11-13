@@ -3,7 +3,7 @@ package tree.heap;
 
 import java.util.Arrays;
 
-class MinHeap {
+ class MinHeap {
     private static int LEFT(int i) {
         return (2 * i + 1);
     }
