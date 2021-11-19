@@ -10,7 +10,6 @@ public class WordBreak {
         List<String> wordDict = new ArrayList<>();
         wordDict.add("leet");
         wordDict.add("code");
-
         System.out.println(wordBreak(s,wordDict));
     }
 

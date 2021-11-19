@@ -23,21 +23,12 @@ public class CountAllPalindromicSubsequence {
                  else if(dp[i][j]!=-1)
                      return dp[i][j];
                  else if(s.charAt(i-1)==t.charAt(j-1)) {
-                     dp[i][j] = 1 + dp[i-1][j - 1];
+                     dp[i][j] = 1 + dp[i][j-1]+dp[i-1][j-1];
                  }else
-                     dp[i][j]=Math.max(dp[i-1][j],dp[i][j-1]);
+                     dp[i][j]=dp[i][j-1]+dp[i-1][j-1]-dp[i][j-1];
              }
          }
-         return count;
-    }
-
-    public static boolean isPalindrome(String s, int i, int j){
-        while(i<j) {
-            if (s.charAt(i) != s.charAt(j))
-                return false;
-            i++;j--;
-        }
-        return true;
+         return dp[n][n];
     }
 
 }

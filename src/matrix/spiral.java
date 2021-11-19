@@ -20,7 +20,7 @@ public class spiral {
 
         if(i>=m||j>=n)
             return ;
-       for(int p=i; p<n; p++)
+       for(int p=j; p<n; p++)
            System.out.print(mat[i][p]+"->");
         for(int p=i+1; p<m; p++)
             System.out.print(mat[p][n-1]+"->");
@@ -29,7 +29,7 @@ public class spiral {
                 System.out.print(mat[m-1][p]+"->");
         }
         if(n-1!=j) {
-            for (int p = n - 2; p >= i + 1; p--)
+            for (int p = m - 2; p >= i + 1; p--)
                 System.out.print(mat[p][j] + "->");
         }
         spiralOrder(mat, i+1,j+1,m-1, n-1);
