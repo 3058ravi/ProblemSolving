@@ -1,5 +1,7 @@
 package DP.LCS;
 
+import java.util.Arrays;
+
 public class SequencePatternMatching {
     public static void main(String[] args) {
         String s1 = "axy";
@@ -24,5 +26,7 @@ public class SequencePatternMatching {
         }
 
         return  dp[m][n]==s1.length();
+
+
     }
 }
