@@ -1,3 +1,6 @@
+/**
+ * Solution for graph coloring problem.
+ */
 package backtracking;
 
 import java.util.Arrays;

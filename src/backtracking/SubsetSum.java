@@ -1,3 +1,6 @@
+/**
+ * Solution to print all the subsets of an array whose sum equals to a given value.
+ */
 package backtracking;
 
 import java.util.Arrays;

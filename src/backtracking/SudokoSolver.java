@@ -1,3 +1,6 @@
+/**
+ * Solution for solving a Sudoku.
+ */
 package backtracking;
 
 public class SudokoSolver {

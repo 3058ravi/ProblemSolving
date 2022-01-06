@@ -1,3 +1,6 @@
+/**
+ * Checking if a string can be completely broken down into substrings wrt a given dictonary of words
+ */
 package backtracking;
 
 import java.util.Arrays;

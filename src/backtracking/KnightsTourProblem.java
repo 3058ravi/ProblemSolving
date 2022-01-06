@@ -1,3 +1,7 @@
+/**
+ * Solution for moving a knight on chess board
+ * such that it does not traverse the same cell twice covering all the cells.
+ */
 package backtracking;
 
 import java.util.Arrays;

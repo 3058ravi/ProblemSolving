@@ -1,3 +1,6 @@
+/**
+ * Solution for placing N queens on a N*N chess board such that no queen cross the path of other queen.
+ */
 package backtracking;
 
 import java.util.Arrays;

@@ -1,6 +1,8 @@
+/**
+ * Solution for traversing a matrix from start(0,0) to end(n-1,n-1)
+ * assuming rat can only traverse through adjecent 1's of current position.
+ */
 package backtracking;
-
-import java.util.Arrays;
 
 public class RatMaze {
     static int N;

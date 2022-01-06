@@ -1,3 +1,6 @@
+/**
+* Print all the permutation generated from rearranging all characters of a string
+*  */
 package backtracking;
 
 public class AllPermutationOfString {
