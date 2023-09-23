@@ -7,8 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AllPathForASum {
-    public static void main(String[] args) {
 
+    /*
+    Given a tree, print all combination of nodes whose sum equals given value.
+    The solution is considered valid only if sum of  root to leaf node equals given sum.
+     */
+    public static void main(String[] args) {
 
         TNode root = new TNode(12);
         root.left = new TNode(7);
@@ -19,9 +23,9 @@ public class AllPathForASum {
 
 
         List<List<Integer>> list = printAllPathsForASum(root, 23);
-        for(List<Integer> l: list){
-            for(int i:l){
-                System.out.print(i+ " ");
+        for (List<Integer> l : list) {
+            for (int i : l) {
+                System.out.print(i + " ");
             }
             System.out.println("");
         }
@@ -45,7 +49,7 @@ public class AllPathForASum {
             printAllPathsForASum(currNode.left, sum - currNode.getData(), currPath, allPaths);
             printAllPathsForASum(currNode.right, sum - currNode.getData(), currPath, allPaths);
         }
-        currPath.remove(currPath.size()-1);
+        currPath.remove(currPath.size() - 1);
 
     }
 }
